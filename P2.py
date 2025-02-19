@@ -49,10 +49,7 @@ cipher_length += int(saved_value)
 index = c % cipher_length
 # we now have a value that we're looking for 
 for j in range(len(cipher_list)):
-    x = cipher_list[j]
-    if x >= index:
+    if index <= cipher_list[j]:  # If index falls within current character's range
         print(cipher_value[j])
         break
-    else:
-        index -= x
-        continue
+    index -= cipher_list[j]  # Move to next character's range
