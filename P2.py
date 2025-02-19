@@ -36,6 +36,7 @@ for i in cipher_value:
         rle_list.append(cipher_list[counter])
     counter += 1
 
-# rle_list is a numerical list of the cipher (non-repeated tho)
 
+
+# rle_list is a numerical list of the cipher (non-repeated tho)
 print(rle_list[index])
